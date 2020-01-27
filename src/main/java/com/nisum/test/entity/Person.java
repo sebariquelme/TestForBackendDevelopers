@@ -19,4 +19,5 @@ public class Person extends BaseEntity {
     private String password;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "person")
     private Set<PhoneNumber> phones;
+    private String token;
 }
